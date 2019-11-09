@@ -10,13 +10,12 @@ nav ul {
     list-style-type: none;
     margin: 0;
     align-items: right;
-    width: 100%;
+    width:100%;
 }
 
 .search-box-container {
     width: 100%;
 }
-
 nav {
     width: 400px;
     margin: auto;
@@ -26,16 +25,13 @@ nav {
 .search-box-container {
     display: flex;
 }
-
 .search-box-container:before {
     content: "🔎 "
 }
-
 .logo {
     margin: auto;
     margin-right: 10px;
 }
-
 nav a {
     color: inherit;
     text-decoration: none;
