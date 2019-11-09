@@ -9,13 +9,21 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>A Sample Article Turned Rant – CSNotes</title>
-    <meta name="description" content="This is a sample article - if you clicked on one from the search page it obviously isn't going to be the correct one, since this page isn't dynamic yet. So there's not much to say here –– but I will say that debugging JavaScript is very hard.">
+    <title gvar="true">pn – CSNotes</title>
+    <meta gvar="true" name="description" content="This is a sample article - if you clicked on one from the search page it obviously isn't going to be the correct one, since this page isn't dynamic yet. So there's not much to say here –– but I will say that debugging JavaScript is very hard.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/pages/article.css">
 </head>
 
 <body>
+    <!-- !!This is being intentionally served before the page content. -->
+    <script src="/js/page-setup.js"></script>
+
+    <!-- These components are used directly on the page, so they are being loaded immediately so there is no content 'flashing' -->
+    <script src="/js/components/LinkList.js"></script>
+    <script src="/js/components/Footer.js"></script>
+
+
     <div class="container">
         <div class="nav">
             <div class="logo">~/<strong>cs</strong>notes</div>
@@ -110,28 +118,13 @@
                     </div>
                 </div>
             </div>
-            <footer>
-                <div class="footer-section">
-                    csNotes 1.0
-                    <ul>
-                        <li>Privacy Policy</li>
-                        <li>View on GitHub</li>
-                        <li>Contact Us</li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    Made with ❤️ in Hoboken.
-                    <ul>
-                        <li>Report a Concern</li>
-                        <li>Sitemap</li>
-                    </ul>
-                </div>
-            </footer>
+            <t-compose renderComponent="Footer"></t-compose>
+
         </div>
 
     </div>
 
-    <script src="/script.js"></script>
+   
 </body>
 
 </html>
