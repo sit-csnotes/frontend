@@ -1,5 +1,22 @@
 /** CSS for article page **/
+/** CSS for phones**/
+@media only screen and (max-width: 425px) 
+{  
+  
+}
 
+/** CSS for tablets **/
+@media only screen and (min-width: 426px) and (max-width: 1024px) 
+{
+
+}
+
+/** CSS for laptops/desktop **//
+@media only screen and (max-width: 1440px) 
+{
+
+}
+  
 /** Import full page css **/
 @import url('../components/generics.css');
 
