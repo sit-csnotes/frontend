@@ -1,7 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri:400,500,600,700&display=swap');
+@import url('./fonts.css');
+
+/** Define variables for root **/
+:root {
+    --main-bg-color: brown;
+}
+
 body {
     font-family: 'Hind Siliguri', sans-serif;
 }
+
 .container {
     display: flex;
     flex-direction: column;
