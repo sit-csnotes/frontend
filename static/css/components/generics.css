@@ -11,7 +11,6 @@
 
 body {
     font-family: var(--default-font), sans-serif;
-
     padding: 0;
     /* We'll do this manually later. */
     margin: 0;
@@ -20,10 +19,23 @@ body {
 p,
 pre,
 code {
-    font-family: var(--default-font), ans-serif;
-    font-size: var(--default-font-size);
     color: var(--default-font-color);
     line-height: 1.75;
+}
+
+code, pre {
+    background-color: rgba(0,0,0,0.1);
+    padding: 4px;
+    border-radius: 4px;
+}
+
+p {
+    font-family: var(--default-font), sans-serif;
+    font-size: var(--default-font-size);
+}
+
+code,pre {
+    font-family: monospace;
 }
 
 .container {

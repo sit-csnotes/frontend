@@ -14,23 +14,44 @@ nav ul {
 }
 
 .search-box-container {
-    width: 100%;
+    width: fit-content;
 }
 nav {
-    width: 400px;
-    margin: auto;
+    width: fit-content;
+    margin-left: auto;
     /* TODO make this dynamic! */
 }
 
 .search-box-container {
     display: flex;
 }
-.search-box-container:before {
-    content: "🔎 "
+.search-box-container input {
+    border: 1px solid grey;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 300px;
+    background-color: lightgray;
+    color: black;
+    opacity: 0.7;
+    font-family: var(--default-font-family);
+}
+.search-box-container input:focus {
+    outline: none;
+    opacity: 1;
+}
+.search-box-container input:hover {
+    outline: none;
+    opacity: 1;
+    cursor: pointer;
 }
 .logo {
-    margin: auto;
     margin-right: 10px;
+    margin-right: auto;
+}
+.logo,nav {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 nav a {
     color: inherit;

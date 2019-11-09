@@ -1,6 +1,6 @@
 .toast {
     padding: 10px;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgb(250, 248, 174);
     border-radius: 8px;
     display: flex;
 }
