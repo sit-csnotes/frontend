@@ -1,162 +1,59 @@
-@import url('./fonts.css');
+@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri:400,500,600,700&display=swap');
+@import url('./nav.css');
+@import url('./ui-elements.css');
 
 /** Define variables for root **/
 :root {
-    --main-bg-color: brown;
+    --default-font: 'Hind Siliguri';
+    --default-font-size: 1rem;
+    --default-font-color: black;
 }
 
 body {
-    font-family: 'Hind Siliguri', sans-serif;
+    font-family: var(--default-font), sans-serif;
+
+    padding: 0;
+    /* We'll do this manually later. */
+    margin: 0;
+}
+
+p,
+pre,
+code {
+    font-family: var(--default-font), ans-serif;
+    font-size: var(--default-font-size);
+    color: var(--default-font-color);
+    line-height: 1.75;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    
-}
-.nav-side {
-    display: flex;
-    flex-direction: row;
-    padding: 5px;
-}
-body {
-    padding: 0;
-    margin: 0;
-}
-nav ul {
-    display: flex;
-    padding: 0;
-    list-style-type: none;
-    margin: 0;
-    align-items: right;
-    width:100%;
 }
 
-.search-box-container {
-    width: 100%;
-}
-nav {
-    width: 400px;
-    margin: auto;
-    /* TODO make this dynamic! */
-}
-.toast {
-    padding: 10px;
-    background-color: rgba(0,0,0,0.1);
-    border-radius: 8px;
-    display: flex;
-}
-.toast>*{
-    width:100%;
-}
-.toast>.close-button{
-    width:initial !important;
-}
-article>p {
-    font-size: 1rem;
-    line-height: 1.75;
-}
-.comment {
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-}
-.comment-content-area {
-    flex-direction: column;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-left: 5px;
-    display: flex;
-}
-.comment-actions > button {
-    background: none;
-    border: 0;
-}
-.comment-upvote-downvote {
-    display: flex;
-    flex-direction: column;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-.comment-upvote-downvote > button {
-    background: none;
-    border: 0;
-}
-.comment>.comment-actions>button {
-    background: none;
-    border: 0;
-}
-.comment-thread {
-    margin-left: 30px;
-    display: flex;
-    border-left: 1px solid gray;
-    flex-direction: column;
-}
-.comment-thread:first-child {
-    border-left: 0 !important;
-}
-.comment-section {
-    margin-left: -30px;
-}
-.comment-section {
-    display: flex;
-    flex-direction: column;
-}
-
-.search-box-container {
-    display: flex;
-}
-.search-box-container:before {
-    content: "🔎 "
-}
-.logo {
-    margin: auto;
-    margin-right: 10px;
-}
-nav a {
-    color: inherit;
-    text-decoration: none;
-}
-
-nav ul li {
-    padding-left: 15px;
-}
 .main-page {
     width: 100%;
     max-width: 600px;
     margin: auto;
 }
-.tags {
-    display: flex;
-    flex-direction: row;
-}
-.tag {
-    margin: 5px;
-   height: 20px;
-    padding: .15em 4px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 15px;
-    border-radius: 2px;
-    box-shadow: inset 0 -1px 0 rgba(27,31,35,.12);
-    background-color: #e6e6fa; color: #000000
-}
-.tag:first-child {
-    margin-left: 0px;
-}
-.tag-other {
-    background-color: #aefcdb; color: #000000
-}
 
-h1,h2,h3,h4,h5,h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-bottom: 0;
     margin-top: 0;
 }
+
 footer {
     display: flex;
     padding-top: 150px;
     opacity: .5;
 }
+
 footer>.footer-section {
     width: 100%;
     align-items: center;
@@ -168,9 +65,5 @@ button.close-button {
     background: none;
     border: 0;
     font-size: 18px;
-    color: rgba(0,0,0,0.6);
-}
-
-p, pre, code {
-    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
 }

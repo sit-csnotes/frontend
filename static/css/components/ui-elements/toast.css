@@ -1,0 +1,14 @@
+.toast {
+    padding: 10px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 8px;
+    display: flex;
+}
+
+.toast>*{
+    width:100%;
+}
+
+.toast>.close-button{
+    width:initial !important;
+}

@@ -12,12 +12,12 @@
     <title>CSNotes</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="./css/pages/article.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="nav-side">
+        <div class="nav">
             <div class="logo">~/<strong>cs</strong>notes</div>
             <div class="search-box-container"><input placeholder="Search for a problem..." /></div>
             <nav>
@@ -29,22 +29,29 @@
             </nav>
         </div>
         <div class="main-page">
-            <div class="toast"><span>‼️ This page is simply HTML/CSS (a frontend template), and is not yet activated with live information; it is a sample.</span><button
-                    class="close-button">X</a></div>
+            <div class="toast"><span>‼️ This page is simply HTML/CSS (a frontend template), and is not yet activated
+                    with live information; it is a sample.</span><button class="close-button">X</a></div>
             <article>
                 <h1>A Sample Article Turned Rant</h1>
                 <div class="author">2 min read – By @justinoboyle</div>
                 <div class="tags"><span class="tag">javascript</span><span class="tag tag-other">debugging</span></div>
-                <p>This is a sample article - if you clicked on one from the search page it obviously isn't going to be the correct one, since this page isn't dynamic yet. So there's not much to say here –– but I will say that debugging JavaScript is very hard . Take this code-block:</p>
-                <code><pre>
+                <p>This is a sample article - if you clicked on one from the search page it obviously isn't going to be
+                    the correct one, since this page isn't dynamic yet. So there's not much to say here –– but I will
+                    say that debugging JavaScript is very hard . Take this code-block:</p>
+                <code>
+                    <pre>
 function abc(num) {
     return num + 1
 }
                 </pre></code>
                 <p>You might think: Oh, this will break if I try to pass in a word right?</p>
-                <p>Nope. Let's put in "hello" It will return <code>hello1</code>. No typechecking (unless you want to transpile), fun! We haven't even gotten into scoping <code>this.</code></p>
+                <p>Nope. Let's put in "hello" It will return <code>hello1</code>. No typechecking (unless you want to
+                    transpile), fun! We haven't even gotten into scoping <code>this.</code></p>
                 <h3>Better than Python</h3>
-                <p>Let's be honest though. It's better than Python - which is great for writing short scripts. But have you ever tried to package up a Python project without <a href="https://docker.com">Docker</a>? Piping <code>requirements.txt</code> into pip? What kind of package management is that? And don't get me started on the whole version2/version3 thing. </p>
+                <p>Let's be honest though. It's better than Python - which is great for writing short scripts. But have
+                    you ever tried to package up a Python project without <a href="https://docker.com">Docker</a>?
+                    Piping <code>requirements.txt</code> into pip? What kind of package management is that? And don't
+                    get me started on the whole version2/version3 thing. </p>
             </article>
             <h2>Comments</h2>
             <div class="comment-section">
@@ -86,7 +93,8 @@ function abc(num) {
                             </span>
                             <span class="comment-content-area">
                                 <small>@replyguy2 / 3 min ago</small>
-                                <span>This is a great comment, and you definitely weren't inspired by Reddit for this design, now were you?</span>
+                                <span>This is a great comment, and you definitely weren't inspired by Reddit for this
+                                    design, now were you?</span>
                                 <small class="comment-actions"><button>Reply</button><button>Report</button></small>
                             </span>
                         </div>
@@ -115,7 +123,7 @@ function abc(num) {
                     </ul>
                 </div>
                 <div class="footer-section">
-                        Made with ❤️ in Hoboken.
+                    Made with ❤️ in Hoboken.
                     <ul>
                         <li>Report a Concern</li>
                         <li>Sitemap</li>
