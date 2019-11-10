@@ -39,6 +39,14 @@ nav {
 .display-mobile {
     display: none;
 }
+.search-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.search-page input {
+    align-self: center;
+}
 @media(max-width: 600px) {
 
     .search-box-container input  {
@@ -53,6 +61,9 @@ nav {
 
     .search-box-container input  {
         display: none;
+    }
+    .search-page input {
+        display: block;
     }
     .display-mobile {
         display: block;

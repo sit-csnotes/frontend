@@ -45,19 +45,30 @@ code,pre {
 
 .main-page {
     width: 100%;
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
+}
+.main-page input {
+    font-size: 30px;
+    min-width: 600px;
+}
+@media(max-width: 1228px) {
+    .main-page {
+        max-width: 800px;
+    }
 }
 .main-page section {
     padding: 20px;
 }
 .main-page .content-section {
-    max-width: 600px;
+    min-width: 600px;
+    max-width: 100%;
 }
 main {
     display: flex;
     flex-direction: row;
 }
+
 @media(max-width: 850px) {
     .main-page {
         max-width: fit-content;
@@ -73,6 +84,7 @@ main {
     hideable {
         display: none;
     }
+
 }
 
 
