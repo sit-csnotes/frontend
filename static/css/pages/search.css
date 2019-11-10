@@ -1,0 +1,59 @@
+/** CSS for article page **/
+
+/** Import full page css **/
+@import url('../components/generics.css');
+
+/** page-specific elements used **/
+@import url('../components/ui-elements/comments.css');
+
+input {
+    display: none;
+}
+
+.search-page input {
+    display: block;
+}
+
+.content-section {
+    width: 100%;
+}
+section { 
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    padding: 60px;
+    font-size: 18px;
+}
+
+table tr {
+    display: flex;
+}
+table tr:nth-child(even) {
+    background-color: rgba(0,0,0,.1);
+    border-radius: 10px;
+}
+table tr:nth-child(even):hover {
+    background-color: rgba(0,0,0,.4);
+}
+tr:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,.3);
+    border-radius: 10px;
+
+}
+table tr:first-child:hover {
+    background-color: white;
+    cursor: inherit;
+}
+td,th{
+    width: fit-content;
+    min-width: 90px;
+    padding: 15px;
+}
+td.full-col,
+th.full-col {
+    width: 100%;
+    text-align: left;
+}
