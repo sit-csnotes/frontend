@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js">
+<html>
 <!--<![endif]-->
 
 <head>
@@ -16,15 +16,17 @@
 </head>
 
 <body>
-    <!-- !!This is being intentionally served before the page content. -->
+    !!This is being intentionally served before the page content.
     <script src="/js/page-setup.js"></script>
 
     <!-- These components are used directly on the page, so they are being loaded immediately so there is no content 'flashing' -->
     <script src="/js/components/LinkList.js"></script>
     <script src="/js/components/Footer.js"></script>
-
+    <script src="/js/components/HeaderNav.js"></script>
 
     <div class="container">
+        <!-- <t-compose renderComponent="HeaderNav"></t-compose> -->
+        
         <div class="nav">
             <div class="logo">~/<strong>cs</strong>notes</div>
             <div class="search-box-container"><input placeholder="Search for a problem..." /></div>
@@ -36,6 +38,8 @@
                 </ul>
             </nav>
         </div>
+
+
         <div class="main-page">
             <div class="toast"><span>‼️ This page is simply HTML/CSS (a frontend template), and is not yet activated
                     with live information; it is a sample.</span><button class="close-button">X</a></div>
