@@ -45,9 +45,36 @@ code,pre {
 
 .main-page {
     width: 100%;
-    max-width: 600px;
+    max-width: 900px;
     margin: auto;
 }
+.main-page section {
+    padding: 20px;
+}
+.main-page .content-section {
+    max-width: 600px;
+}
+main {
+    display: flex;
+    flex-direction: row;
+}
+@media(max-width: 850px) {
+    .main-page {
+        max-width: fit-content;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    main {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 600px) {
+    hideable {
+        display: none;
+    }
+}
+
 
 
 h1,

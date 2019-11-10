@@ -36,6 +36,28 @@ nav {
     opacity: 0.7;
     font-family: var(--default-font-family);
 }
+.display-mobile {
+    display: none;
+}
+@media(max-width: 600px) {
+
+    .search-box-container input  {
+        max-width: inherit;
+    }
+
+    nav {
+        padding: 15px;
+    }
+}
+@media(max-width: 555px) {
+
+    .search-box-container input  {
+        display: none;
+    }
+    .display-mobile {
+        display: block;
+    }
+}
 .search-box-container input:focus {
     outline: none;
     opacity: 1;

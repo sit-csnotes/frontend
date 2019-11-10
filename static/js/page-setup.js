@@ -1,6 +1,11 @@
 /* Modularize - by Justin O'Boyle
    for CS-146 */
 
+window.__STATE = {}
+
+/* Modularize - by Justin O'Boyle
+   for CS-146 */
+
 (function() {
     window.requireAsync = async function(path = null, options = {}) {
         if(path == null) {
