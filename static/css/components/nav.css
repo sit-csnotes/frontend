@@ -1,7 +1,7 @@
 .nav {
     display: flex;
     flex-direction: row;
-    padding: 5px;
+    padding: 10px;
 }
 
 nav ul {
@@ -47,7 +47,7 @@ nav {
 .search-page input {
     align-self: center;
 }
-@media(max-width: 600px) {
+@media(max-width: 790px) {
 
     .search-box-container input  {
         max-width: inherit;

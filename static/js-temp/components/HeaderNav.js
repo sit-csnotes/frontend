@@ -8,7 +8,6 @@ registerComponent("HeaderNav", {
         <ul>
             <li><a href="/login.html">Log in</a></li>
             <li><a href="/post.html">+ Post</a></li>
-            <li><a href="/me.html">Profile</a></li>
         </ul>
     </nav>
 </div>
