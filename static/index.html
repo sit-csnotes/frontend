@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html>
-<!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
@@ -16,26 +11,17 @@
 </head>
 
 <body>
-    <!-- !!This is being intentionally served before the page content. -->
-    <script src="/js/page-setup.js"></script>
-
-    <!-- These components are used directly on the page, so they are being loaded immediately so there is no content 'flashing' -->
-    <script src="/js/components/LinkList.js"></script>
-    <script src="/js/components/Footer.js"></script>
-    <script src="/js/components/HeaderNav.js"></script>
 
     <div class="container">
-        <!-- <t-compose renderComponent="HeaderNav"></t-compose> -->
 
         <div class="nav">
-            <div class="logo">~/<strong>cs</strong>n<hideable>otes</hideable>
+            <div class="logo"><a href="index.html">~/<strong>cs</strong>n<hideable>otes</hideable></a>
             </div>
             <div class="search-box-container"><input placeholder="Search for a problem..." /></div>
             <nav>
                 <ul>
-                    <li class="display-mobile"><a href="search.html">Search</a></li>
+                    <li class="display-mobile"><a href="index.html">Search</a></li>
                     <li><a href="/post.html">+ Post</a></li>
-                    <li><a href="/me.html">Profile</a></li>
                 </ul>
             </nav>
         </div>
@@ -51,7 +37,7 @@
                         <div class="jumbotron">
                             <div class="jumbotron-content">
                                 <h2>Computer science, simplified.</h2>
-                                <h3>Go on, create that killer app.</h3>
+                                <h3>Go on, create that killer app. Or <a href='post.html'>write a post</a>.</h3>
                             </div>
 
                         </div>
@@ -63,28 +49,28 @@
                                 <th>Tags</th>
                                 <th>Date</th>
                             </tr>
-                                <tr>
+                            <tr>
 
-                                    <td class="full-col"><a href="/article.html">Search Result A</a></td>
-                                    <td><span class="tag">javascript</span></td>
-                                    <td>3 Jan 2019</td>
+                                <td class="full-col"><a href="/article.html">Search Result A</a></td>
+                                <td><span class="tag">javascript</span></td>
+                                <td>3 Jan 2019</td>
 
-                                </tr>
-                                <tr>
-                                    <td class="full-col"><a href="/article.html">Search Result B</a></td>
-                                    <td><span class="tag tag-other">debugging</span></td>
-                                    <td>3 Jan 2019</td>
-                                </tr>
-                                <tr>
-                                    <td class="full-col"><a href="/article.html">Search Result C</a></td>
-                                    <td><span class="tag">javascript</span></td>
-                                    <td>3 Jan 2019</td>
-                                </tr>
-                                <tr>
-                                    <td class="full-col"><a href="/article.html">Search Result D</a></td>
-                                    <td><span class="tag tag-other">debugging</span></td>
-                                    <td>3 Jan 2019</td>
-                                </tr>
+                            </tr>
+                            <tr>
+                                <td class="full-col"><a href="/article.html">Search Result B</a></td>
+                                <td><span class="tag tag-other">debugging</span></td>
+                                <td>3 Jan 2019</td>
+                            </tr>
+                            <tr>
+                                <td class="full-col"><a href="/article.html">Search Result C</a></td>
+                                <td><span class="tag">javascript</span></td>
+                                <td>3 Jan 2019</td>
+                            </tr>
+                            <tr>
+                                <td class="full-col"><a href="/article.html">Search Result D</a></td>
+                                <td><span class="tag tag-other">debugging</span></td>
+                                <td>3 Jan 2019</td>
+                            </tr>
                         </table>
                     </div>
                 </section>
@@ -107,7 +93,7 @@
 
     </div>
 
-
+    <script src="/js/search.js"></script>
 </body>
 
 </html>

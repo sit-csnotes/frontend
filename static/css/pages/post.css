@@ -65,7 +65,7 @@ th.full-col {
     background-color: none;
     border-radius: 30px;
     margin-bottom: 30px;
-    background-image: url('/assets/bg-home.jpg');
+    background-image: url('/assets/writing.jpeg');
     background-size: cover;
 }
 
@@ -77,17 +77,57 @@ th.full-col {
 
 .jumbotron-content h2 {
     font-size: 40px;
+    color: black;
     margin-bottom: 0;
 }
 .jumbotron-content h3 {
     font-size: 28px;
     margin-top: 0;
+    color: black;
+    padding: 5px;
+    width: fit-content;
+}
+.editor-area {
+    display: flex;
+}
+.editor-area div {
+    width: 100%;
+    padding: 10px;
+}
+.editor-area textarea {
+    border: none;
+    border-right: 1px dotted rgba(0,0,0,0.3);
+    height: 300px;
+    font-family: monospace;
+    font-size: 14px;
+    width: 100%;
 }
 
-.logo {
-    font-size: 40px;
+textarea:focus {
+    outline: none;
 }
 
+
+
+.tos {
+    color: darkgray;
+}
+
+button {
+    font-size: 14px;
+    background-color: darkgreen;
+    border: 0;
+    padding: 8px 16px;
+    font-weight: 600;
+    color: white;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: lightgreen;
+    color: black;
+    cursor: pointer;
+}
 
 @media(max-width: 790px) {
     input {
@@ -119,5 +159,13 @@ th.full-col {
         max-width: inherit;
     }
 
-}
+    .editor-area {
+        flex-direction: column;
+    }
 
+    .editor-area textarea {
+        border: none;
+        border-bottom: 1px dotted rgba(0,0,0,0.3);
+    }
+
+}

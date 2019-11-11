@@ -1,7 +1,7 @@
 .nav {
     display: flex;
     flex-direction: row;
-    padding: 5px;
+    padding: 10px;
 }
 
 nav ul {

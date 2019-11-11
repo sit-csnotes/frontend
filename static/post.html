@@ -10,20 +10,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title gvar="true">New Post – CSNotes</title>
-    <meta gvar="true" name="description"
-        content="Search for notes.">
+    <meta gvar="true" name="description" content="Search for notes.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/pages/article.css">
+    <link rel="stylesheet" href="./css/pages/post.css">
 </head>
 
 <body>
-    <!-- !!This is being intentionally served before the page content. -->
-    <script src="/js/page-setup.js"></script>
-
-    <!-- These components are used directly on the page, so they are being loaded immediately so there is no content 'flashing' -->
-    <script src="/js/components/LinkList.js"></script>
-    <script src="/js/components/Footer.js"></script>
-    <script src="/js/components/HeaderNav.js"></script>
 
     <div class="container">
         <!-- <t-compose renderComponent="HeaderNav"></t-compose> -->
@@ -36,24 +28,37 @@
                 <ul>
                     <li class="display-mobile"><a href="search.html">Search</a></li>
                     <li><a href="/post.html">+ Post</a></li>
-                    <li><a href="/me.html">Profile</a></li>
                 </ul>
             </nav>
         </div>
 
 
         <div class="main-page">
-                <h1>New Post</h1>
-                <textarea class="new-post-textarea"></textarea>
-                <p>By submitting a post, you abide by the Terms of Service</p>
-                <button class="submit-new-post">Submit</button>
+            <h1>+ New Post</h1>
+
             <main>
-                
+
                 <section>
-                    
-                    <div class="content-section">
-                            <div class="search-box-container search-page"><input placeholder="Search for a problem..." /></div>
+
+                    <div class="jumbotron">
+                        <div class="jumbotron-content">
+                            <h2>Time to write...</h2>
+                            <h3>Need some inspiration? Check out <a href='index.html'>some other posts</a>.</h3>
                         </div>
+
+                    </div>
+                    <div class="editor-area">
+                        <div class="editor-section">
+                            <h2>Editor</h2>
+                            <textarea class="new-post-textarea"># Write some markdown here</textarea>
+                        </div>
+                        <div class="editor-section">
+                            <h2>Preview</h2>
+                            <h1>Write some markdown here</h1>
+                        </div>
+                    </div>
+                    <p class="tos">By submitting a post, you abide by the Terms of Service</p>
+                    <button class="submit-new-post">Submit</button>
                 </section>
             </main>
             <footer>
@@ -73,8 +78,9 @@
         </div>
 
     </div>
+    <script src="/js/marked.js"></script>
 
-
+    <script src="/js/post.js"></script>
 </body>
 
 </html>
