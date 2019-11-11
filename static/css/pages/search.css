@@ -24,6 +24,7 @@ section {
 table {
     width: 100%;
     padding: 60px;
+    padding-top: 10px;
     font-size: 18px;
 }
 
@@ -57,3 +58,66 @@ th.full-col {
     width: 100%;
     text-align: left;
 }
+
+.jumbotron {
+    width: 100%;
+    min-height: 300px;
+    background-color: green;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    background-image: url('/assets/bg-home.jpg');
+    background-size: cover;
+}
+
+.jumbotron-content {
+    color: white;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+.jumbotron-content h2 {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+.jumbotron-content h3 {
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.logo {
+    font-size: 40px;
+}
+
+
+@media(max-width: 790px) {
+    input {
+        min-width: 20px;
+        max-width: 30px;
+        width: 100%;
+        font-size: 30px;
+    }
+
+    td,th{
+        min-width: fit-content;
+        width: fit-content;
+        padding: 15px 10px;
+    }
+
+    table {
+        width: 100%;
+        padding: 0;
+        padding-top: 10px;
+        font-size: 18px;
+    }
+
+    .main-page .content-section {
+        min-width: 0px;
+    }
+
+    .main-page input {
+        min-width: 0px;
+        max-width: inherit;
+    }
+
+}
+

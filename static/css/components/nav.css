@@ -47,7 +47,7 @@ nav {
 .search-page input {
     align-self: center;
 }
-@media(max-width: 600px) {
+@media(max-width: 790px) {
 
     .search-box-container input  {
         max-width: inherit;
