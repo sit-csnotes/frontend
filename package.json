@@ -16,7 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start-production": "rm -rf build && react-scripts build && node server/serve.js"
+    "start-production": "rm -rf build; react-scripts build && node server/serve.js"
   },
   "eslintConfig": {
     "extends": "react-app"
