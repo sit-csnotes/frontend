@@ -6,13 +6,44 @@ import ReactMarkdown from 'react-markdown'
 
 export default class PostPage extends Component {
   state = {
-      value: '# Write some markdown here'
+      value: '# Write some markdown here',
+      title: 'Title...'
   }
   handleChange(event) {
     //   console.log(event.target.value || '')
     this.setState({ value: event.target.value || '' })
     localStorage.articleWIP = event.target.value || ''
   }
+
+  handleChangeTitle(event) {
+    this.setState({ title: event.target.value || '' })
+    localStorage.titleWIP = event.target.value || ''
+  }
+
+  send() {
+    const {title,value} = this.state
+    const form = document.createElement("form");
+    const h = {
+      "token": localStorage.token,
+      "title": title,
+      "content": value
+    }
+
+    for(let key in h) {
+      const inp = document.createElement("input")
+      inp.name=key
+      inp.value=h[key]
+      form.appendChild(inp)
+    }
+
+    form.method = "POST";
+    form.action = "https://api.csnotes.app/post";   
+
+    document.body.appendChild(form);
+
+    form.submit();
+  }
+
   render() {
     return (
       <main>
@@ -23,6 +54,8 @@ export default class PostPage extends Component {
               Need some inspiration? Check out <Link to="/">some other posts.</Link>
             </h3>
           </Jumbotron>
+  
+          <input placeholder="Title..." onChange={this.handleChangeTitle.bind(this)} />
           <div className="editor-area">
             <div className="editor-section">
               <h2>Editor</h2>
@@ -35,7 +68,7 @@ export default class PostPage extends Component {
           <p className="tos">
             By submitting a post, you abide by the Terms of Service
           </p>
-          <button className="submit-new-post">Submit</button>
+          <button onClick={() => this.send()} className="submit-new-post">Submit</button>
         </section>
       </main>
     )
