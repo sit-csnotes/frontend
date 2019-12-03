@@ -26,7 +26,7 @@ export default class SearchTable extends Component {
         <tbody>
           <tr>
             <th className="full-col">Name</th>
-            <th>Tags</th>
+            <th> </th>
             <th>Date</th>
           </tr>
           {this.results.map(result => {
@@ -42,7 +42,7 @@ export default class SearchTable extends Component {
                     </span>
                   ))}
                 </td>
-                <td>{Date.now()}</td>
+                <td>{new Date(result.date || 0).toLocaleDateString("en-GB", {day: 'numeric', month: 'long', year: 'numeric'})}</td>
               </tr>
             )
           })}

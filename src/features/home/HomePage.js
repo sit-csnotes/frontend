@@ -26,7 +26,7 @@ export default class HomePage extends Component {
               onChange={event => {
                 this.setState({ query: event.target.value || "" })
                 this.props.postMetaStore
-                  .checkForNew(event.target.value, () => this.setState({}))
+                  .checkForNew({ search: event.target.value }, () => this.setState({}))
                   .then()
                   .catch(console.log)
               }}

@@ -7,17 +7,20 @@ export default class Nav extends Component {
     return (
       <div className="nav">
         <div className="logo">
-          <a href="index.html">
+          <Link to='/'>
             ~/<strong>cs</strong>n<span className="hideable">otes</span>
-          </a>
+          </Link>
         </div>
         <div className="search-box-container">
-          <input placeholder="Search for a problem..." />
+          {/* <input placeholder="Search for a problem..." /> */}
         </div>
         <nav>
           <ul>
             <li className="display-mobile">
               <Link to='/'>Search</Link>
+            </li>
+            <li>
+              <a href={`https://api.csnotes.app/auth/token/${localStorage.token}`}>Log In</a>
             </li>
             <li>
               <Link to="/post">+ Post</Link>
