@@ -31,13 +31,13 @@ export default class SearchTable extends Component {
           </tr>
           {this.results.map(result => {
             return (
-              <tr key={result.href}>
+              <tr key={`${result.poster}/${result.name}`}>
                 <td className="full-col">
-                  <Link to={result.href}>{result.name}</Link>
+                  <Link to={`/article/${result.poster}/${result.name}`}>{result.name}</Link>
                 </td>
                 <td>
                   {result.tags.map(tag => (
-                    <span key={`tag${tag}${result.href} `} className="tag">
+                    <span key={`tag${tag}/article/${result.poster}/${result.name} `} className="tag">
                       {tag}
                     </span>
                   ))}

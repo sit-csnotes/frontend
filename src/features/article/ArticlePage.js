@@ -1,18 +1,66 @@
 import React, { Component } from "react"
 import "./ArticlePage.css"
 import CommentSection from "./CommentSection"
-import Toast from './Toast'
-import Tag from './Tag'
+import Toast from "./Toast"
+import Tag from "./Tag"
 
 export default class ArticlePage extends Component {
   state = {
-    loaded: false
+    loaded: false,
+    found: false,
+    content: "Content",
+    title: "Title",
+    tags: ["tag"],
+    date: 0,
+    poster: "poster",
+    name: "name",
   }
-  componentWillMount() {
+  componentDidMount() {
+    console.log("componentDidMount")
+    this.props.postContentStore
+      .checkForNew(
+        ({
+          poster: this.props.match.params.username,
+          name: this.props.match.params.name,
+        }),
+        () => this.checkPostContentStore()
+      )
+      .then()
+      .catch(console.log)
+  }
 
+  checkPostContentStore() {
+    console.log("checkPostContentStore")
+    if (
+      this.props.postContentStore.userposts &&
+      this.props.postContentStore.userposts[this.props.match.params.username] &&
+      this.props.postContentStore.userposts[this.props.match.params.username][
+        this.props.match.params.name
+      ]
+    ) {
+      const obj = this.props.postContentStore.userposts[this.props.match.params.username][
+        this.props.match.params.name
+      ]
+      console.log(obj)
+      if (!obj.found) 
+        return this.setState({
+          found: false,
+        })
+      console.log("Loaded!")
+      return this.setState({
+        loaded: true,
+        ...obj,
+      })
+    } else {
+      console.log(":(", this.props.postContentStore)
+      return this.setState({
+        loaded: false,
+      })
+    }
   }
+
   render() {
-    if(!this.state.loaded) {
+    if (!this.state.loaded) {
       return (
         <main>
           <span>loading lol</span>

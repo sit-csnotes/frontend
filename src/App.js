@@ -23,7 +23,7 @@ export default class App extends Component {
                 path="/article/:username/:name"
                 component={props => (
                   <ArticlePage
-                    postMetaStore={this.props.store.postMetaStore}
+                    postContentStore={this.props.store.postContentStore}
                     {...props}
                   />
                 )}
