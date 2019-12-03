@@ -1,7 +1,0 @@
-/** CSS for article page **/
-
-/** Import full page css **/
-@import url('../components/generics.css');
-
-/** page-specific elements used **/
-@import url('../components/ui-elements/comments.css');

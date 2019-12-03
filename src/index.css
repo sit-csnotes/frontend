@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri:400,500,600,700&display=swap');
+
+/** Define variables for root **/
+:root {
+    --default-font: 'Hind Siliguri';
+    --default-font-size: 1rem;
+    --default-font-color: black;
+}
+
+body {
+    font-family: var(--default-font), sans-serif;
+    padding: 0;
+    /* We'll do this manually later. */
+    margin: 0;
+}
+
+p,
+pre,
+code {
+    color: var(--default-font-color);
+    line-height: 1.75;
+}
+
+code,
+pre {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 4px;
+    border-radius: 4px;
+}
+
+p {
+    font-family: var(--default-font), sans-serif;
+    font-size: var(--default-font-size);
+}
+
+code,
+pre {
+    font-family: monospace;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-page {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main-page input {
+    font-size: 30px;
+    min-width: 600px;
+}
+
+@media(max-width: 1228px) {
+    .main-page {
+        max-width: 800px;
+    }
+}
+
+.main-page section {
+    padding-right: 20px;
+}
+
+.main-page .content-section {
+    min-width: 600px;
+    max-width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width: 850px) {
+    .main-page {
+        max-width: fit-content;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .main-page .content-section {
+        min-width: 0px;
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 790px) {
+    .hideable {
+        display: none;
+    }
+
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+footer {
+    display: flex;
+    padding-top: 20px;
+    opacity: .5;
+}
+
+footer>.footer-section {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+button.close-button {
+    background: none;
+    border: 0;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+a {
+    text-decoration: none;
+    color: #098AD9;
+}
