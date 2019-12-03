@@ -1,0 +1,26 @@
+{
+  "name": "csnotes-frontend",
+  "version": "1.0.0",
+  "description": "The frontend for the csnotes project.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"No test specified, so it passed\" && exit 0",
+    "start": "node src/index.js",
+    "production": "ENV=production node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csnotes/frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csnotes/frontend/issues"
+  },
+  "homepage": "https://github.com/csnotes/frontend#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-pretty-log": "^1.1.0"
+  }
+}
